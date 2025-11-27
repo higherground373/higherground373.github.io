@@ -1,95 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Fundraiser Sundays</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #faf8f5;
-            color: #333;
-        }
-        header {
-            background: #c77c33;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        section {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            line-height: 1.6;
-        }
-        .card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            margin-bottom: 1.5rem;
-        }
-        h2 {
-            margin-top: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Higher Grounds CoffeeHouse & Juice Bar — Fundraiser Sundays</title>
+<style>
+  :root{
+    --accent:#c77c33;
+    --dark:#111;
+    --muted:#666;
+    --card:#fff;
+    --bg:#faf8f5;
+    --maxw:1100px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);color:var(--dark);-webkit-font-smoothing:antialiased}
+  header{background:linear-gradient(180deg,var(--accent),#b2672a);color:#fff;padding:2rem 1rem;text-align:center}
+  header img.logo{max-height:84px;vertical-align:middle;margin-bottom:6px}
+  header h1{margin:.3rem 0;font-size:1.6rem;letter-spacing:0.6px}
+  header p{margin:0.2rem 0 0.8rem;color:rgba(255,255,255,0.95)}
+  nav{max-width:var(--maxw);margin:1rem auto;display:flex;gap:1rem;justify-content:center;padding:0 1rem}
+  nav a{padding:.5rem .9rem;border-radius:8px;text-decoration:none;color:var(--accent);background:#fff;border:1px solid rgba(0,0,0,0.06);font-weight:600}
+  main{max-width:var(--maxw);margin:1rem auto;padding:1rem}
+  .row{display:flex;gap:1rem;flex-wrap:wrap}
+  .card{background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 6px 20px rgba(10,10,10,0.06);flex:1 1 320px;min-width:260px}
+  .hero{display:flex;gap:1rem;align-items:center}
+  .hero img{max-width:320px;width:100%;border-radius:10px;object-fit:cover}
+  h2{margin-top:0}
+  .small{font-size:0.95rem;color:var(--muted)}
+  .social{display:flex;gap:.5rem;flex-wrap:wrap}
+  .social a{display:inline-block;padding:.45rem .7rem;border-radius:8px;background:#fff;border:1px solid rgba(0,0,0,0.06);text-decoration:none;color:var(--dark);font-weight:600}
+  footer{max-width:var(--maxw);margin:2rem auto;padding:1rem;text-align:center;color:var(--muted);font-size:.9rem}
+  .logos{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+  .logos img{max-height:64px}
+  .donate-cta{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 1rem;border-radius:10px;text-decoration:none;font-weight:700}
+  @media (max-width:700px){
+    header h1{font-size:1.25rem}
+    nav{flex-direction:column;align-items:center}
+    .hero{flex-direction:column}
+    .hero img{max-width:100%}
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Sunday Fundraisers at the Café</h1>
-        <p>Every Sunday • All day • Now through next year</p>
-    </header>
+  <header>
+    <img src="LOGO-PNG-1-1536x922.png" alt="Higher Grounds CoffeeHouse & Juice Bar logo" class="logo">
+    <h1>Higher Grounds CoffeeHouse & Juice Bar</h1>
+    <p>Fundraiser Sundays — Every Sunday • All day • Running until next year</p>
+  </header>
 
-    <section>
-        <div class="card">
-            <h2>About the Event</h2>
-            <p>
-                Join us every Sunday as we raise funds for a cause that matters. 
-                Enjoy your favorite dishes, drinks, and treats knowing that a portion 
-                of every sale goes directly to supporting the community.
-            </p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="donate.html">Donate</a>
+    <a href="https://fundraise.bcchf.ca/fundraisers/rickallen" target="_blank" rel="noopener">Fundraiser Page</a>
+    <a href="https://fundraise.bcchf.ca/" target="_blank" rel="noopener">BCCHF</a>
+  </nav>
+
+  <main>
+    <section class="row">
+      <article class="card hero" aria-labelledby="about-heading">
+        <div style="flex:1">
+          <h2 id="about-heading">What we're doing</h2>
+          <p class="small">
+            Each Sunday we donate a portion of sales to BC Children’s Hospital Foundation through the Rick Allen fundraiser.
+            Come for coffee, juice, food, and community. Bring friends. Scan the QR code at the counter or visit our donate page.
+          </p>
+          <p style="margin-top:1rem">
+            <a class="donate-cta" href="donate.html">Donate / Learn more</a>
+            <a style="margin-left:.6rem;color:var(--muted);text-decoration:underline" href="https://fundraise.bcchf.ca/fundraisers/rickallen" target="_blank" rel="noopener">Go to fundraiser (BCCHF)</a>
+          </p>
         </div>
 
-        <div class="card">
-            <h2>Location</h2>
-            <p>
-                The Café<br>
-                (Insert your address here)
-            </p>
+        <div style="width:320px;display:flex;flex-direction:column;gap:.6rem;align-items:center">
+          <img src="Untitled design_20251127_021849_0000.png" alt="BC Children's Hospital Foundation logo" style="max-height:110px;">
+          <img src="4d8d97a4cbb7d4a46db323854291763641742-member-donate-qrcode (1).png" alt="in-store donation QR code" style="max-width:240px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.08)">
+          <div class="small" style="text-align:center">Scan this QR in-store to donate directly to the Rick Allen fundraiser.</div>
         </div>
+      </article>
 
-        <div class="card">
-            <h2>Hours</h2>
-            <p>
-                Sundays: 8 AM to Close<br>
-                Running weekly until the end of next year.
-            </p>
+      <aside class="card" aria-labelledby="visit-heading">
+        <h2 id="visit-heading">Visit us</h2>
+        <p class="small">
+          Higher Grounds CoffeeHouse & Juice Bar<br>
+          <strong>Website:</strong> <a href="https://highergroundscoffeehouseandjuicebar.ca/" target="_blank" rel="noopener">highergroundscoffeehouseandjuicebar.ca</a><br>
+          <strong>When:</strong> Sundays 8:00 AM — Close (weekly)<br>
+          <strong>How it works:</strong> Order anything on Sundays and a portion goes to the fundraiser.
+        </p>
+        <div style="margin-top:1rem" class="logos">
+          <a href="https://fundraise.bcchf.ca/fundraisers/rickallen" target="_blank" rel="noopener">
+            <img src="Untitled design_20251127_021849_0000.png" alt="BC Children's Hospital Foundation logo small">
+          </a>
+          <img src="LOGO-PNG-1-1536x922.png" alt="Higher Grounds logo small">
         </div>
-
-        <div class="card">
-            <h2>How It Works</h2>
-            <ul>
-                <li>Come in on any Sunday.</li>
-                <li>Order anything on the menu.</li>
-                <li>A portion of the proceeds goes straight to the fundraiser.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Want to Get Involved?</h2>
-            <p>You can help by spreading the word, showing up, or donating directly in person.</p>
-        </div>
+      </aside>
     </section>
 
-    <footer>
-        © 2025 The Café • Fundraiser Sundays
-    </footer>
+    <section style="margin-top:1rem" class="row">
+      <div class="card">
+        <h2>Photos</h2>
+        <p class="small">A few photos of the café. Replace these with any shop images in the repo root. (Filename examples: photo1.jpg, photo2.jpg)</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.6rem;margin-top:.6rem">
+          <img src="LOGO-PNG-1-1536x922.png" alt="shop example 1" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+          <img src="4d8d97a4cbb7d4a46db323854291763641742-member-donate-qrcode (1).png" alt="shop example 2" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+          <img src="Untitled design_20251127_021849_0000.png" alt="shop example 3" style="width:100%;height:120px;object-fit:cover;border-radius:8px">
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Social</h2>
+        <p class="small">Follow, share, or tag us. Your reach matters more than you think.</p>
+        <div class="social" style="margin-top:.6rem">
+          <a href="https://www.instagram.com/chefrickallen3425?igsh=d3R6NG5pNHN2MG85" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/share/1AMqR9Zftp/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://highergroundscoffeehouseandjuicebar.ca/" target="_blank" rel="noopener">Official Site</a>
+        </div>
+
+        <h3 style="margin-top:1rem">Quick links</h3>
+        <ul style="padding-left:1.1rem">
+          <li><a href="donate.html">Donate on this site</a></li>
+          <li><a href="https://fundraise.bcchf.ca/fundraisers/rickallen" target="_blank" rel="noopener">Rick Allen fundraiser (BCCHF)</a></li>
+          <li><a href="https://fundraise.bcchf.ca/" target="_blank" rel="noopener">BC Children's Hospital Foundation</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Higher Grounds CoffeeHouse & Juice Bar — Fundraiser Sundays • Built with ☕ and stubbornness.
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
